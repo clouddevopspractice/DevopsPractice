@@ -13,4 +13,11 @@ git status (provides status of the workspace), git log (shows the log informatio
 
 git log --oneline --grep "Files" ( To filter the message based on commit details)
 
+# To ignore files for commit or to staging
+.gitignore
+
+# Branching  -- > To get or two work on 2 similar modueles in a project we can using branching
+
+git branch newbranchname (To create a new branch) , git checkout branchname ( To switch to the branch name that mentioned)
+
 
