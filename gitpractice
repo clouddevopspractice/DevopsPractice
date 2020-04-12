@@ -21,6 +21,7 @@ git log --oneline --grep "Files" ( To filter the message based on commit details
 git branch newbranchname (To create a new branch) , git checkout branchname ( To switch to the branch name that mentioned)
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   Output :
           base) [root@oc6310106358 GIT]# git status
 	# On branch master
@@ -45,6 +46,9 @@ git branch newbranchname (To create a new branch) , git checkout branchname ( To
 
 =======
 Git cherry-pick commitid: this has to be executed at destination level. -- > To synch the commit id in childbranch to master , we need to switch to master and then execute this git cherry-pick commitid
+>>>>>>> Stashed changes
+=======
+# Git stash takes back up of files on the recent workdir workspace
 >>>>>>> Stashed changes
 
 # To merge entiry branches then we need to use as git merge childbranch master --> This will merge all changes in child to master branch
