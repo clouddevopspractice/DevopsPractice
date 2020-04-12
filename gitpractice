@@ -11,4 +11,6 @@ git add . or git add filename git add foldername ( folders will get add only whe
 
 git status (provides status of the workspace), git log (shows the log information with complete commit details) , git log --oneline( displays 7 letters of the commitid) 
 
+git log --oneline --grep "Files" ( To filter the message based on commit details)
+
 
