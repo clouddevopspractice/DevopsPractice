@@ -54,4 +54,10 @@ Git cherry-pick commitid: this has to be executed at destination level. -- > To 
 # To merge entiry branches then we need to use as git merge childbranch master --> This will merge all changes in child to master branch
 
 # Stashing Files in workspace commands
+
+git stash list , git stash , git stash clear , git stash apply stash@{0} etc. are the commands and it should apply only under working dir not after adding files to staging.
+
+
+# Git Reverting changes
+
  
