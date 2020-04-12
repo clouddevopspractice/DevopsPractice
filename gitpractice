@@ -20,4 +20,26 @@ git log --oneline --grep "Files" ( To filter the message based on commit details
 
 git branch newbranchname (To create a new branch) , git checkout branchname ( To switch to the branch name that mentioned)
 
+  Output :
+          base) [root@oc6310106358 GIT]# git status
+	# On branch master
+	# Changes not staged for commit:
+	#   (use "git add <file>..." to update what will be committed)
+	#   (use "git checkout -- <file>..." to discard changes in working directory)
+	#
+	#	modified:   gitpractice
+	#
+	no changes added to commit (use "git add" and/or "git commit -a")
+	(base) [root@oc6310106358 GIT]# git add .
+	(base) [root@oc6310106358 GIT]# git stash
+	Saved working directory and index state WIP on master: 4bad82f Merge branch 'childbranch'
+	HEAD is now at 4bad82f Merge branch 'childbranch'
+	(base) [root@oc6310106358 GIT]# git branch
+	  childbranch
+	* master
+	(base) [root@oc6310106358 GIT]# git status
+	# On branch master
+	nothing to commit, working directory clean
+	(base) [root@oc6310106358 GIT]# vi gitpractice 
+
 
