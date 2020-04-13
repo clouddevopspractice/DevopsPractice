@@ -1,6 +1,6 @@
 ---
 # To create repositories in git there are two types of repos
-# one is bare repo and another is non bare repos , bare repos are central repos which will be only for storing and sharing data.
+# one  is bare repo and another is non bare repos , bare repos are central repos which will be only for storing and sharing data.
 # In Non-bare repos we can edit and upload data and also can share data b/w users.
 
 git init --bare   --> This creates central repo
