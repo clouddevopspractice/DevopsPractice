@@ -4,5 +4,5 @@
   tasks:
   - name: This file will copy the war file in jenkins to tomcat using ansible tool
     copy: 
-      src: /opt/Decops/PracticeNotes/ansible/playbooks/webapp.war
+      src: /opt/Devops/PracticeNotes/ansible/playbooks/webapp.war
       dest: /opt/tomcat/tomcat2/webapps
