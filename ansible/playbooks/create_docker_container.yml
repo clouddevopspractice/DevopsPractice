@@ -1,0 +1,7 @@
+---
+- hosts: webservers
+  become: true
+  tasks:
+
+   - name: Create a new container using image from docker hub
+     shell: docker run -it -d --name valaxy_demohub -p 8090:8080 clouddevopspractice/valaxy_demo
