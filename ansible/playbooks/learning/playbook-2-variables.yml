@@ -1,0 +1,38 @@
+---
+#This play book is to understand the usage of variables in ansible.
+
+#Play-1
+
+#Target Section
+ - hosts: webservers
+
+# Declare variables that need to be used for later using "vars" 
+   vars:
+    my_content: "This file created using vars concept"
+
+# Define a task to create file on remote servers using variable
+   tasks:
+   - copy:
+      dest: /opt/Devops/PracticeNotes/ansible/playbooks/learning/var_file.txt
+      content: "{{ my_content }}"
+
+
+##########################################################################################
+
+####Play-2 we can write a note using # tag or - name: information or value
+ - name: My Second Play
+
+#Target Section , if we are using -name as written above then we dont need to mention "-" for target section check diff in play1 n play2.
+   hosts: all
+
+#Varaibles Section : To read variable value from command line using "vars_prompt".
+   vars_prompt:
+# Define a variable for vars_prompt
+     name: var1
+     prompt: Enter a value to write to a variable?  
+
+# Define tasks to use vars_prompt efficiently.
+   tasks:
+     - name: This is used to print the value that we entered using vars prompt
+       debug:
+        msg: "The value that you entered in command prompt for variable1 is {{ var1 }}"

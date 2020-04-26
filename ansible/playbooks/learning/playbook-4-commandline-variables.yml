@@ -1,0 +1,29 @@
+---
+# This playbook shows how to pass variables from command line to a playbook?
+ - name: This is a play to enter values from command line
+   hosts: all
+   tasks:
+   - debug:
+      msg: "The values that entered for var1 {{ var1 }} and var2 is {{ var2 }}"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###############################################################################33
+
+
+
+# How to access command line variables in a playbook?

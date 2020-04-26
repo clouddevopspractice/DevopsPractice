@@ -1,0 +1,26 @@
+---
+# This play is to create 3 directories without using loop concept
+ - hosts: all
+   tasks:
+   - name: This will create my_dir1
+     command: mkdir /tmp/my_dir1
+   - name: This will create my_dir2
+     command: mkdir /tmp/my_dir2
+   - name: This will create my_dir3
+     command: mkdir /tmp/my_dir3
+
+
+######################################################################
+#This Play is to achieve directories creation using loop concept
+# Target Section
+ - hosts: webservers
+#No variables to declare
+#Tasks Section using loop called with items
+   tasks:    
+   - name: This will create directories in specified location
+     command: mkdir /tmp/""{{ item }}""
+     with_items:
+     - new_dir1
+     - new_dir2
+     - new_dir3
+

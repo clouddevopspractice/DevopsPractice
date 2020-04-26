@@ -1,0 +1,10 @@
+---
+ - name: This will work based on when expression or condition
+   hosts: webservers
+   tasks:
+    - name: This will write info into a file under tmp location. 
+      copy:
+      dest: /tmp/when_file.txt
+      content: "This file is created based on when expression"
+    when: true
+       

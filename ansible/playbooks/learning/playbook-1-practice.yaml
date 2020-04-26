@@ -1,0 +1,24 @@
+---
+# The First 3 "-" represent interpreter as yaml 
+# My First Playbook Practice
+
+# Play-1
+# Target Section List
+ - hosts: all
+# Variable representation if any
+# Tasks List under first play
+   tasks:
+   - command: touch /opt/Devops/PracticeNotes/ansible/playbooks/learning/learningyamlscripting.txt
+   - copy:
+      src=/opt/Devops/PracticeNotes/ansible/playbooks/learning/learningyamlscripting.txt
+      dest=/tmp/
+
+
+#Play-2
+#Target Section list
+ - hosts: webservers
+#Variable representation if any
+#Tasks list under second play
+   tasks:
+#Adhoc commands representation in a playbook
+   - command: echo "Successfully executed first yaml basic script with 2 adhoc commands" >> /opt/Devops/PracticeNotes/ansible/playbooks/learning/learningyamlscripting.txt
