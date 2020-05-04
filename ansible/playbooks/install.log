@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<result>
+  <warning uid='CRIMA1269W'>
+    CRIMA1269W: This installation operation did not modify the installation at &quot;/home/ganesh/Documents/GK/WebSphere/AppServer&quot;.&#10;&#10;Explanation: The package, features, and languages specified by this operation are already installed at this location.&#10;&#10;User Action: No action is required unless you expected something different. If one of the elements is incorrect - the package group, package ID, directory, features, or languages - change the information and run the operation again. If the package is already installed and you intended to reinstall it from scratch, uninstall the package before you reinstall.
+  </warning>
+</result>

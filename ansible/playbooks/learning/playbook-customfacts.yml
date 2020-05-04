@@ -1,0 +1,6 @@
+#To get custom facts
+---
+  hosts: all
+  - name: Finding Custom Facts
+    tasks:
+     - debug: msg="The custome fact value is {{ansible_local.git}}"

@@ -1,0 +1,9 @@
+---
+#This playbook of ansible install websphere using response file
+#Target section has to be mentioned like which group of servers it has to be installed
+ - hosts: webservers
+#Tasks Section
+   tasks:
+    - name: Installing Websphere
+#      command: sudo /home/ganesh/Documents/GK/IBM8/IM/eclipse/tools/imcl -input /opt/Devops/PracticeNotes/ansible/playbooks/ans_web_responsefile.xml -log /opt/Devops/PracticeNotes/ansible/playbooks/install.log -acceptLicense 
+       command: sudo /home/ganesh/Documents/GK/IBM8/IM/eclipse/tools/imcl -install com.ibm.websphere.ND.v85 -repositories /home/ganesh/Documents/GK/WASBinaries/WASND/ -installationDirectory /opt/Devops/PracticeNotes/Ans_WebSphere/AppServer -acceptLicense -sP
